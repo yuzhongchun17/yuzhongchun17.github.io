@@ -12,5 +12,5 @@ I am a Mechanical Engineering student at Stanford University, specializing in ro
 
 Previously, I earned my B.S. in Mechanical Engineering from the University of Illinois Urbana-Champaign (UIUC). During my time there, I worked on a Wearable Arm Joint Movement Measuring Device in the [Human Dynamics and Controls Lab](https://hdcl.mechanical.illinois.edu/), advised by Professor [Elizabeth Hsiao-Wecksler](https://hdcl.mechanical.illinois.edu/people/liz-hsiao-wecksler/). I also contributed to the development of mapping algorithms for a high-speed autonomous quadrotor in the [Advanced Controls Research Laboratory](https://naira.mechse.illinois.edu/), advised by Professor [Naira Hovakimyan](https://mechse.illinois.edu/people/profile/nhovakim).
  
-I enjoy taking photos. A lot.
+I enjoy taking photos. Very -v-.
 
