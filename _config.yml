@@ -24,12 +24,14 @@ author:
   avatar           : "profile.png"
   name             : "Zhongchun Yu"
   pronouns         : # example: "she/her"  
-  bio              : "MechE Master at Stanford University"
+  bio              : "MechE MS at Stanford University"
   location         : "Stanford, CA"
   # employer         : "Stanford University"
   uri              : # URL
   email            : "zy17@stanford.edu" 
-
+  linkedin         : zhongchun-yu # Username
+  github           : "yuzhongchun17"  # Username
+  
   # Academic websites
   # arxiv            : # URL - Update with the correct link to your profile
   # googlescholar    : "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
@@ -44,7 +46,7 @@ author:
   bitbucket        : # Username - Update with your username on the site
   codepen          : # Username
   dribbble         : # Username
-  github           : "yuzhongchun17"
+  # github           : "yuzhongchun17"  # Username
   kaggle           : # Username  
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
@@ -58,7 +60,7 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : zhongchun-yu # Username
+  # linkedin         : zhongchun-yu # Username
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username
