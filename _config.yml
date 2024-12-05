@@ -21,7 +21,7 @@ repository               : "yuzhongchun17.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "profile_linkedin.png"
   name             : "Zhongchun Yu"
   pronouns         : # example: "she/her"  
   bio              : "MechE MS at Stanford University"
