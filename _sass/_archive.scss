@@ -1,23 +1,108 @@
+/* ==========================================================================  
+   ARCHIVE  
+   ========================================================================== */
+
+.archive {
+  margin-bottom: 2em;
+
+  @include breakpoint($medium) {
+    @include span(12 of 12);
+  }
+
+  @include breakpoint($large) {
+    @include span(10 of 12 last);
+    @include prefix(0.5 of 12);
+  }
+
+  a {
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: underline;
+
+      img {
+        box-shadow: 0 0 10px rgba(#000, 0.25);
+      }
+    }
+  }
+}
+
+.archive__subtitle {
+  margin: 1.414em 0 0;
+  padding-bottom: 0.5em;
+  font-size: $type-size-5;
+  color: mix(#fff, $gray, 25%);
+  border-bottom: 1px solid $border-color;
+
+  + .list__item .archive__item-title {
+    margin-top: 0.5em;
+  }
+}
+
 .archive__item {
-  display: flex;
+  display: flex; /* Use flexbox to align the image and text */
   align-items: flex-start;
-  margin-bottom: 2em; // Space between items
+  margin-bottom: 2em;
 
   .archive__item-teaser {
-    flex: 0 0 150px; // Fixed width for the image
-    margin-right: 20px;
-
+    flex: 0 0 150px; /* Fixed width for the image */
+    margin-right: 20px; /* Space between image and text */
+    
     img {
       max-width: 100%;
       height: auto;
-      border-radius: 8px; // Optional: Round image corners
+      border-radius: 8px; /* Optional rounded corners */
       display: block;
     }
   }
 
   .archive__item-body {
-    flex: 1; // Take up the remaining width
-    word-wrap: break-word; // Ensure text wraps properly
+    flex: 1; /* The remaining space is for the text */
+  }
+}
+
+.archive__item-title {
+  margin-bottom: 0.25em;
+  font-family: $sans-serif-narrow;
+
+  a + a {
+    opacity: 0.5;
+  }
+}
+
+/* Remove border */
+.page__content {
+  .archive__item-title {
+    margin-top: 1em;
+    border-bottom: none;
+  }
+}
+
+.archive__item-excerpt {
+  margin-top: 0;
+  font-size: $type-size-6;
+
+  & + p {
+    text-indent: 0;
+  }
+}
+
+.archive__item-teaser {
+  border-radius: $border-radius;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+  }
+}
+
+.archive__item:hover {
+  .archive__item-teaser {
+    box-shadow: 0 0 10px rgba(#000, 0.25);
+  }
+
+  .archive__item-title {
+    text-decoration: underline;
   }
 }
 
