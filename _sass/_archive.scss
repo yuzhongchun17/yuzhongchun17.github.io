@@ -1,5 +1,5 @@
-/* ==========================================================================  
-   ARCHIVE  
+/* ==========================================================================
+   ARCHIVE
    ========================================================================== */
 
 .archive {
@@ -39,28 +39,6 @@
   }
 }
 
-.archive__item {
-  display: flex; /* Use flexbox to align the image and text */
-  align-items: flex-start;
-  margin-bottom: 2em;
-
-  .archive__item-teaser {
-    flex: 0 0 150px; /* Fixed width for the image */
-    margin-right: 20px; /* Space between image and text */
-    
-    img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 8px; /* Optional rounded corners */
-      display: block;
-    }
-  }
-
-  .archive__item-body {
-    flex: 1; /* The remaining space is for the text */
-  }
-}
-
 .archive__item-title {
   margin-bottom: 0.25em;
   font-family: $sans-serif-narrow;
@@ -70,8 +48,9 @@
   }
 }
 
-/* Remove border */
+/* remove border*/
 .page__content {
+
   .archive__item-title {
     margin-top: 1em;
     border-bottom: none;
@@ -90,7 +69,6 @@
 .archive__item-teaser {
   border-radius: $border-radius;
   overflow: hidden;
-
   img {
     width: 100%;
   }
@@ -106,14 +84,162 @@
   }
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .archive__item {
-    flex-direction: column;
+
+/*
+   List view
+   ========================================================================== */
+
+.list__item {
+  @include breakpoint($medium) {
+    padding-right: $right-sidebar-width-narrow;
+  }
+
+  @include breakpoint($large) {
+    padding-right: $right-sidebar-width;
+  }
+
+  @include breakpoint($x-large) {
+    padding-right: $right-sidebar-width-wide;
+  }
+
+  .page__meta {
+    margin: 0 0 4px;
+  }
+}
+
+
+/*
+   Grid view
+   ========================================================================== */
+
+.grid__item {
+  margin-bottom: 2em;
+
+  .page__meta {
+    margin: 0 0 4px;
+  }
+
+  .archive__item-title {
+    margin-top: 0.5em;
+    font-size: $type-size-5;
+  }
+
+  .archive__item-excerpt {
+    display: none;
+  }
+
+  @include breakpoint($small) {
+    @include gallery(5 of 10);
+    .archive__item-teaser {
+      max-height: 200px;
+    }
+  }
+
+  @include breakpoint($medium) {
+    margin-left: 0; /* reset before mixin does its thing*/
+    margin-right: 0; /* reset before mixin does its thing*/
+    @include gallery(2.5 of 10);
 
     .archive__item-teaser {
-      margin-right: 0;
-      margin-bottom: 1em;
+      max-height: 120px;
+    }
+
+    .archive__item-excerpt {
+      display: block;
+      font-size: $type-size-6;
+    }
+  }
+}
+
+
+/*
+   Features
+   ========================================================================== */
+
+.feature__wrapper {
+  @include clearfix();
+  margin-bottom: 2em;
+  border-bottom: 1px solid $border-color;
+}
+
+.feature__item {
+  margin-bottom: 2em;
+  font-size: 1.25rem;
+
+  @include breakpoint($small) {
+    margin-bottom: 0;
+    @include gallery(4 of 12);
+
+    .feature__item-teaser {
+      max-height: 200px;
+      overflow: hidden;
+    }
+  }
+
+  &--left {
+    @include full();
+    font-size: 1.25rem;
+
+    .archive__item-teaser {
+      margin-bottom: 2em;
+    }
+
+    @include breakpoint($small) {
+      .archive__item-teaser {
+        @include span(5 of 12);
+      }
+
+      .archive__item-body {
+        @include span(7 of 12 last);
+        @include prefix(0.5 of 12);
+        @include suffix(1 of 12);
+      }
+    }
+  }
+
+  &--right {
+    @include full();
+    font-size: 1.25rem;
+
+    .archive__item-teaser {
+      margin-bottom: 2em;
+    }
+
+    @include breakpoint($small) {
+      text-align: right;
+
+      .archive__item-teaser {
+        @include span(5 of 12 rtl);
+      }
+
+      .archive__item-body {
+        @include span(7 of 12 last rtl);
+        @include prefix(0.5 of 12);
+        @include suffix(1 of 12);
+      }
+    }
+  }
+
+  &--center {
+    @include full();
+    font-size: 1.25rem;
+
+    .archive__item-teaser {
+      margin-bottom: 2em;
+    }
+
+    @include breakpoint($small) {
+      text-align: center;
+
+      .archive__item-teaser {
+        margin: 0 auto;
+        width: span(5 of 12);
+      }
+
+      .archive__item-body {
+        margin: 0 auto;
+        width: span(7 of 12);
+      }
     }
   }
 }
