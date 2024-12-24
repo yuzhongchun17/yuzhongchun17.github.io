@@ -9,6 +9,5 @@ venue: 'Journal 1'
 paperurl: 'http://academicpages.github.io/files/paper1.pdf'
 slidesurl: 'http://academicpages.github.io/files/slides1.pdf'
 citation: 'Your Name, You. (2009). &quot;Paper Title Number 1.&quot; <i>Journal 1</i>. 1(1).'
-header:
-  teaser: 'https://yuzhongchun17.github.io/images/bio-photo.jpg'
+image: 'https://yuzhongchun17.github.io/images/bio-photo.jpg' # Add this field
 ---
