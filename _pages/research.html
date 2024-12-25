@@ -17,7 +17,8 @@ permalink: /research/
     max-width: 900px; /* Constrain the table width for readability */
     margin: 0 auto; /* Center the table */
     border-collapse: separate; /* Allow spacing between rows */
-    border-spacing: 0 25px; /* Add space between rows */
+    border-spacing: 0 50px; /* Add space between rows */
+    border: none; /* Remove table borders */
   }
 
   .research-table td {
@@ -61,13 +62,22 @@ permalink: /research/
     color: orange; /* Change color on hover */
   }
 
+  .research-authors,
+  .research-meta,
+  .research-links,
+  .research-description {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: #333;
+  }
+    
   .research-authors a,
   .research-links a {
     color: #007acc; /* Default color */
     text-decoration: none; /* Remove underline */
     transition: color 0.3s; /* Smooth hover effect */
   }
-
+  
   .research-authors a:hover,
   .research-links a:hover {
     color: orange; /* Change color on hover */
