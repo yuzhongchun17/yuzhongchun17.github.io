@@ -3,19 +3,22 @@ layout: default
 title: "Research"
 permalink: /research/
 ---
-<div class="research-container">
+
+<h1>Research</h1>
+
+<table class="research-table">
   <!-- First Research Project -->
-  <div class="research-item" onmouseout="cat4d_stop()" onmouseover="cat4d_start()">
-    <div class="research-media">
-      <div class="media-overlay" id="cat4d_image">
+  <tr onmouseout="cat4d_stop()" onmouseover="cat4d_start()">
+    <td class="research-media">
+      <div class="media-container" id="cat4d_image">
         <video width="100%" height="100%" muted autoplay loop>
           <source src="images/cat4d.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
       </div>
       <img src="images/cat4d.jpg" alt="CAT4D Thumbnail">
-    </div>
-    <div class="research-content">
+    </td>
+    <td class="research-content">
       <a href="https://cat-4d.github.io/" class="research-title">
         CAT4D: Create Anything in 4D with Multi-View Video Diffusion Models
       </a>
@@ -36,11 +39,11 @@ permalink: /research/
       <p class="research-description">
         An approach for turning a video into a 4D radiance field that can be rendered in real-time. When combined with a text-to-video model, this enables text-to-4D.
       </p>
-    </div>
-  </div>
+    </td>
+  </tr>
 
-  <!-- Add additional research items here in the same format -->
-</div>
+  <!-- Add additional rows for more research projects in the same format -->
+</table>
 
 <script type="text/javascript">
   function cat4d_start() {
