@@ -10,86 +10,79 @@ permalink: /research/
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Research</title>
-    <style>
+  <style>
     /* Research Table Styles */
     .research-table {
       width: 100%;
       max-width: 900px;
       margin: 0 auto;
-      border-collapse: collapse;
-      border: none;
+      border-collapse: collapse; /* Ensure borders are collapsed */
+      border: none; /* Remove table border */
     }
   
     .research-table td {
       vertical-align: top;
       padding: 10px;
-      border: none;
+      border: none; /* Remove cell borders */
     }
   
     .research-table tr {
-      border: none;
+      border: none; /* Remove row borders */
     }
   
     .research-media {
-      width: 150px; /* Consistent width for all images */
-      height: 150px; /* Consistent height for all images */
-      overflow: hidden; /* Crop overflow */
+      width: 20%;
       display: flex;
       align-items: center;
       justify-content: center;
-      border-radius: 8px; /* Optional rounded corners */
     }
   
     .research-media img {
-      width: 100%; /* Ensure image fits the container */
-      height: 100%; /* Ensure image fits the container */
-      object-fit: cover; /* Maintain aspect ratio and crop overflow */
+      width: 150px; /* Make the image square */
+      height: 150px; /* Force the height to match width */
+      object-fit: cover; /* Ensure the image content fits and crops excess */
+      border-radius: 8px; /* Optional: add rounded corners */
     }
   
     .research-content {
-      width: calc(100% - 150px); /* Take remaining space */
+      width: 80%;
     }
   
     .research-title {
-      font-size: 1.2rem;
+      font-size: 1.0rem;
       font-weight: bold;
       text-decoration: none;
       color: #007acc;
-      transition: color 0.3s;
+      transition: color 0.3s; /* Smooth transition for hover effect */
     }
   
     .research-title:hover {
       color: orange; /* Change to orange on hover */
-      text-decoration: none;
-    }
-  
-    .research-authors a {
-      color: #007acc;
       text-decoration: none; /* Remove underline */
-      font-weight: normal; /* Ensure it’s not bold */
-      transition: color 0.3s;
     }
   
-    .research-authors a:hover {
-      color: orange; /* Change to orange on hover */
-      text-decoration: none; /* Ensure no underline */
-    }
-  
+    .research-authors,
+    .research-meta,
+    .research-links,
     .research-description {
+      margin: 5px 0;
       font-size: 1rem;
       color: #333;
-      margin-top: 5px;
+    }
+  
+    .research-meta {
+      font-style: italic;
     }
   
     .research-links a {
       color: #007acc;
       text-decoration: none;
-      transition: color 0.3s;
+      transition: color 0.3s; /* Smooth transition for hover effect */
     }
   
     .research-links a:hover {
-      color: orange;
-      text-decoration: none;
+      color: orange; /* Change to orange on hover */
+      text-decoration: none; /* Remove underline */
     }
   
     /* Responsive adjustments */
