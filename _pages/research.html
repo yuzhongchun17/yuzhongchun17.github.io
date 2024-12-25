@@ -29,40 +29,38 @@ permalink: /research/
     .research-table tr {
       border: none; /* Remove row borders */
     }
+  
     .research-media {
       width: 20%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
-
-    .research-media img,
-    .research-media video {
-      max-width: 100%;
-      border-radius: 8px;
-      display: block;
+  
+    .research-media img {
+      width: 150px; /* Make the image square */
+      height: 150px; /* Force the height to match width */
+      object-fit: cover; /* Ensure the image content fits and crops excess */
+      border-radius: 8px; /* Optional: add rounded corners */
     }
-
-    .media-container {
-      position: relative;
-      overflow: hidden;
-      border-radius: 8px;
-      opacity: 0;
-      transition: opacity 0.3s;
-    }
-
+  
     .research-content {
       width: 80%;
     }
-
+  
     .research-title {
       font-size: 1.0rem;
       font-weight: bold;
       text-decoration: none;
       color: #007acc;
+      transition: color 0.3s; /* Smooth transition for hover effect */
     }
-
+  
     .research-title:hover {
-      text-decoration: underline;
+      color: orange; /* Change to orange on hover */
+      text-decoration: none; /* Remove underline */
     }
-
+  
     .research-authors,
     .research-meta,
     .research-links,
@@ -71,37 +69,40 @@ permalink: /research/
       font-size: 1rem;
       color: #333;
     }
-
+  
     .research-meta {
       font-style: italic;
     }
-
+  
     .research-links a {
       color: #007acc;
       text-decoration: none;
+      transition: color 0.3s; /* Smooth transition for hover effect */
     }
-
+  
     .research-links a:hover {
-      text-decoration: underline;
+      color: orange; /* Change to orange on hover */
+      text-decoration: none; /* Remove underline */
     }
-
+  
     /* Responsive adjustments */
     @media (max-width: 768px) {
       .research-table {
         width: 100%;
       }
-
+  
       .research-media,
       .research-content {
         display: block;
         width: 100%;
       }
-
+  
       .research-media {
         margin-bottom: 10px;
       }
     }
   </style>
+
 </head>
 <body>
   <table class="research-table">
@@ -121,12 +122,10 @@ permalink: /research/
           Gaze-based Control for Assistive Arms
         </a>
         <p class="research-authors">
-          <a href="https://yuzhongchun17.github.io/">Zhongchun Yu</a>,
-          <strong>Shivani Guptasarma</strong>,
-         
+          <a href="https://yuzhongchun17.github.io/">Zhongchun Yu</a>, Shivani Guptasarma         
         </p>
         <p class="research-links">
-          <a href="https://src.stanford.edu/demo/gaze-based-control-for-assistive-arms">project page</a> /
+          <a href="https://src.stanford.edu/demo/gaze-based-control-for-assistive-arms">project page</a> 
         </p>
         <p class="research-description">
           This project explores simplifying the control of assistive robotic arms, like the Jaco arm, by integrating gaze tracking through an AR headset (Hololens2) and surface electromyography (EMG) inputs to enable users with upper-limb amputations to perform complex tasks more intuitively.        </p>
