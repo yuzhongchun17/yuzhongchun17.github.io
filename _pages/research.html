@@ -4,54 +4,149 @@ title: "Research"
 permalink: /research/
 ---
 
-<h1>Research</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research</title>
+  <style>
+    /* Research Table Styles */
+    .research-table {
+      width: 100%;
+      max-width: 900px;
+      margin: 0 auto;
+      border-collapse: separate;
+      border-spacing: 0 15px;
+    }
 
-<table class="research-table">
-  <!-- First Research Project -->
-  <tr onmouseout="cat4d_stop()" onmouseover="cat4d_start()">
-    <td class="research-media">
-      <div class="media-container" id="cat4d_image">
-        <video width="100%" height="100%" muted autoplay loop>
-          <source src="images/cat4d.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-      </div>
-      <img src="images/cat4d.jpg" alt="CAT4D Thumbnail">
-    </td>
-    <td class="research-content">
-      <a href="https://cat-4d.github.io/" class="research-title">
-        CAT4D: Create Anything in 4D with Multi-View Video Diffusion Models
-      </a>
-      <p class="research-authors">
-        <a href="https://www.cs.columbia.edu/~rundi/">Rundi Wu</a>,
-        <a href="https://ruiqigao.github.io/">Ruiqi Gao</a>,
-        <a href="https://poolio.github.io/">Ben Poole</a>,
-        <a href="https://alextrevithick.github.io/">Alex Trevithick</a>,
-        <a href="https://www.cs.columbia.edu/~cxz/index.htm/">Changxi Zheng</a>,
-        <strong>Jonathan T. Barron</strong>,
-        <a href="https://holynski.org/">Aleksander Holynski</a>
-      </p>
-      <p class="research-meta"><em>arXiv</em>, 2024</p>
-      <p class="research-links">
-        <a href="https://cat-4d.github.io/">project page</a> /
-        <a href="https://arxiv.org/abs/2411.18613">arXiv</a>
-      </p>
-      <p class="research-description">
-        An approach for turning a video into a 4D radiance field that can be rendered in real-time. When combined with a text-to-video model, this enables text-to-4D.
-      </p>
-    </td>
-  </tr>
+    .research-table td {
+      vertical-align: top;
+      padding: 10px;
+    }
 
-  <!-- Add additional rows for more research projects in the same format -->
-</table>
+    .research-media {
+      width: 20%;
+    }
 
-<script type="text/javascript">
-  function cat4d_start() {
-    document.getElementById("cat4d_image").style.opacity = "1";
-  }
+    .research-media img,
+    .research-media video {
+      max-width: 100%;
+      border-radius: 8px;
+      display: block;
+    }
 
-  function cat4d_stop() {
-    document.getElementById("cat4d_image").style.opacity = "0";
-  }
-  cat4d_stop();
-</script>
+    .media-container {
+      position: relative;
+      overflow: hidden;
+      border-radius: 8px;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    .research-content {
+      width: 80%;
+    }
+
+    .research-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-decoration: none;
+      color: #007acc;
+    }
+
+    .research-title:hover {
+      text-decoration: underline;
+    }
+
+    .research-authors,
+    .research-meta,
+    .research-links,
+    .research-description {
+      margin: 5px 0;
+      font-size: 1rem;
+      color: #333;
+    }
+
+    .research-meta {
+      font-style: italic;
+    }
+
+    .research-links a {
+      color: #007acc;
+      text-decoration: none;
+    }
+
+    .research-links a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .research-table {
+        width: 100%;
+      }
+
+      .research-media,
+      .research-content {
+        display: block;
+        width: 100%;
+      }
+
+      .research-media {
+        margin-bottom: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <table class="research-table">
+    <!-- First Research Project -->
+    <tr onmouseout="cat4d_stop()" onmouseover="cat4d_start()">
+      <td class="research-media">
+        <div class="media-container" id="cat4d_image">
+          <video width="100%" height="100%" muted autoplay loop>
+            <source src="images/cat4d.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <img src="images/cat4d.jpg" alt="CAT4D Thumbnail">
+      </td>
+      <td class="research-content">
+        <a href="https://cat-4d.github.io/" class="research-title">
+          CAT4D: Create Anything in 4D with Multi-View Video Diffusion Models
+        </a>
+        <p class="research-authors">
+          <a href="https://www.cs.columbia.edu/~rundi/">Rundi Wu</a>,
+          <a href="https://ruiqigao.github.io/">Ruiqi Gao</a>,
+          <a href="https://poolio.github.io/">Ben Poole</a>,
+          <a href="https://alextrevithick.github.io/">Alex Trevithick</a>,
+          <a href="https://www.cs.columbia.edu/~cxz/index.htm/">Changxi Zheng</a>,
+          <strong>Jonathan T. Barron</strong>,
+          <a href="https://holynski.org/">Aleksander Holynski</a>
+        </p>
+        <p class="research-meta"><em>arXiv</em>, 2024</p>
+        <p class="research-links">
+          <a href="https://cat-4d.github.io/">project page</a> /
+          <a href="https://arxiv.org/abs/2411.18613">arXiv</a>
+        </p>
+        <p class="research-description">
+          An approach for turning a video into a 4D radiance field that can be rendered in real-time. When combined with a text-to-video model, this enables text-to-4D.
+        </p>
+      </td>
+    </tr>
+    <!-- Add additional rows for more research projects in the same format -->
+  </table>
+
+  <script>
+    function cat4d_start() {
+      document.getElementById("cat4d_image").style.opacity = "1";
+    }
+
+    function cat4d_stop() {
+      document.getElementById("cat4d_image").style.opacity = "0";
+    }
+    cat4d_stop();
+  </script>
+</body>
+</html>
