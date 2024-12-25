@@ -31,18 +31,20 @@ permalink: /research/
     }
   
     .research-media {
-      width: 20%;
+      width: 20%; /* 20% of the research-table width */
+      aspect-ratio: 1 / 1; /* Always maintain a square aspect ratio */
       display: flex;
       align-items: center;
       justify-content: center;
+      overflow: hidden; /* Crop overflowing content */
     }
-  
+    
     .research-media img {
-      width: 200px; /* Make the image square */
-      height: 200px; /* Force the height to match width */
-      object-fit: cover; /* Ensure the image content fits and crops excess */
+      width: 100%; /* Fill the width of the parent */
+      height: 100%; /* Fill the height of the parent */
+      object-fit: cover; /* Crop and scale the image proportionally */
     }
-  
+      
     .research-content {
       width: 80%;
     }
