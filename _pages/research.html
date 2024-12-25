@@ -16,15 +16,19 @@ permalink: /research/
       width: 100%;
       max-width: 900px;
       margin: 0 auto;
-      border-collapse: separate;
-      border-spacing: 0 15px;
+      border-collapse: collapse; /* Ensure borders are collapsed */
+      border: none; /* Remove table border */
     }
-
+  
     .research-table td {
       vertical-align: top;
       padding: 10px;
+      border: none; /* Remove cell borders */
     }
-
+  
+    .research-table tr {
+      border: none; /* Remove row borders */
+    }
     .research-media {
       width: 20%;
     }
@@ -110,29 +114,22 @@ permalink: /research/
             Your browser does not support the video tag.
           </video>
         </div>
-        <img src="images/bio-photo.jpg" alt="Test Thumbnail">
+        <img src="/images/gaze.png" alt="gaze_based_control thumbnail">
       </td>
       <td class="research-content">
-        <a href="https://cat-4d.github.io/" class="research-title">
-          CAT4D: Create Anything in 4D with Multi-View Video Diffusion Models
+        <a href="https://src.stanford.edu/demo/gaze-based-control-for-assistive-arms" class="research-title">
+          Gaze-based Control for Assistive Arms
         </a>
         <p class="research-authors">
-          <a href="https://www.cs.columbia.edu/~rundi/">Rundi Wu</a>,
-          <a href="https://ruiqigao.github.io/">Ruiqi Gao</a>,
-          <a href="https://poolio.github.io/">Ben Poole</a>,
-          <a href="https://alextrevithick.github.io/">Alex Trevithick</a>,
-          <a href="https://www.cs.columbia.edu/~cxz/index.htm/">Changxi Zheng</a>,
-          <strong>Jonathan T. Barron</strong>,
-          <a href="https://holynski.org/">Aleksander Holynski</a>
+          <a href="https://yuzhongchun17.github.io/">Zhongchun Yu</a>,
+          <strong>Shivani Guptasarma</strong>,
+         
         </p>
-        <p class="research-meta"><em>arXiv</em>, 2024</p>
         <p class="research-links">
-          <a href="https://cat-4d.github.io/">project page</a> /
-          <a href="https://arxiv.org/abs/2411.18613">arXiv</a>
+          <a href="https://src.stanford.edu/demo/gaze-based-control-for-assistive-arms">project page</a> /
         </p>
         <p class="research-description">
-          An approach for turning a video into a 4D radiance field that can be rendered in real-time. When combined with a text-to-video model, this enables text-to-4D.
-        </p>
+          This project explores simplifying the control of assistive robotic arms, like the Jaco arm, by integrating gaze tracking through an AR headset (Hololens2) and surface electromyography (EMG) inputs to enable users with upper-limb amputations to perform complex tasks more intuitively.        </p>
       </td>
     </tr>
     <!-- Add additional rows for more research projects in the same format -->
