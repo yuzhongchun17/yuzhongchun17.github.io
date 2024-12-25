@@ -11,6 +11,91 @@ permalink: /research/
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Research</title>
   <style>
+  /* Research Table Styles */
+  .research-table {
+    width: 100%; /* Ensure the table spans the full width */
+    max-width: 900px; /* Constrain the table width for readability */
+    margin: 0 auto; /* Center the table */
+    border-collapse: separate; /* Allow spacing between rows */
+    border-spacing: 0 25px; /* Add space between rows */
+  }
+
+  .research-table td {
+    vertical-align: middle; /* Align content in the middle vertically */
+    border: none; /* Remove cell borders */
+    padding: 0; /* Remove unnecessary padding */
+  }
+
+  .research-media {
+    width: 220px; /* Fixed size for image container */
+    height: 220px; /* Ensure it's square */
+    display: flex; /* Center content inside flexbox */
+    align-items: center; /* Vertical centering */
+    justify-content: center; /* Horizontal centering */
+    overflow: hidden; /* Crop overflowing image content */
+    margin-right: 25px; /* Add space between image and text */
+  }
+
+  .research-media img {
+    width: 100%; /* Fill container width */
+    height: 100%; /* Fill container height */
+    object-fit: cover; /* Crop image proportionally */
+    display: block; /* Remove inline spacing issues */
+  }
+
+  .research-content {
+    width: auto; /* Allow content to take remaining space */
+    margin: 0; /* Remove unnecessary margin */
+    padding: 0; /* Remove unnecessary padding */
+  }
+
+  .research-title {
+    font-size: 1rem; /* Set font size */
+    font-weight: bold; /* Bold text */
+    text-decoration: none; /* Remove underline */
+    color: #007acc; /* Default color */
+    transition: color 0.3s; /* Smooth hover effect */
+  }
+
+  .research-title:hover {
+    color: orange; /* Change color on hover */
+  }
+
+  .research-authors a,
+  .research-links a {
+    color: #007acc; /* Default color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Smooth hover effect */
+  }
+
+  .research-authors a:hover,
+  .research-links a:hover {
+    color: orange; /* Change color on hover */
+  }
+
+  .research-meta {
+    font-style: italic; /* Italicize metadata */
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .research-table {
+      width: 100%;
+    }
+
+    .research-media,
+    .research-content {
+      display: block;
+      width: 100%;
+    }
+
+    .research-media {
+      margin-bottom: 10px; /* Add space between stacked elements */
+    }
+  }
+</style>
+
+<!--   <style>
     /* Research Table Styles */
     .research-table {
       width: 100%;
@@ -119,7 +204,7 @@ permalink: /research/
         margin-bottom: 10px;
       }
     }
-  </style>
+  </style> -->
 
 </head>
 <body>
